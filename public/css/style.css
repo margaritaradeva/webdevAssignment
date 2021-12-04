@@ -1,0 +1,55 @@
+/*Style for the navigation manu*/
+
+/*color for the menu*/
+.nav-tabs{
+	background-color:#C743CE;
+}
+/*color for the general font */
+.nav-item{
+    color:#ffffff;
+}
+/*when going over the tab*/
+.nav-tabs a:hover{
+	background-color:#FEE5FF;
+	color:#14539a;
+}
+/*color for the active tab*/
+#act{
+	background-color:#8C1791;
+	color:#ffffff;
+}
+/* -------------end------------ */
+
+/* Style for the banner */
+
+/* Using the whole banner picture */
+.banner{
+	width:100%
+}
+/* Jumbotron properties-fixing the text box position and not letting the background picture erepeat itself */
+.banner .jumbotron{
+	padding:100px 60px;
+	margin:0px;
+	background-image: url('/pictures/banner.jpg');
+	background-size:cover;
+	background-repeat: no-repeat;
+}
+/* Making a sligtly transparent background of the text with rounded borders and fixing the text properties */
+#banner-text{
+	background-color: RGBA(249, 204, 239,0.41);
+	border-radius: 25px;
+	color:#ffffff;
+	text-align: left;
+	text-shadow: 2px 2px 15px #000000;
+    font-size:30px;
+}
+#banner-text h1{
+	
+    font-size:60px;
+}
+/* ----------end------ */
+
+#objective { 
+    text-align: justify;
+    
+}

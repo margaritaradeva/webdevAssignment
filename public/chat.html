@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Chat room</title>
+    <link rel="stylesheet" href="/css/demo.css" />
+      
+   <!--============================= Adding Bootstrap to the page ========================-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.jjs/1.16.0/umd/popper.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+	
+  </head>
+  <body>
+      
+         <!--====================== Navigation menu using the Bootstrap example from lectures ===============-->        
+		<header>
+            
+			<ul class ="nav nav-tabs ml-auto flex-sm-row">
+				<li class="nav-item">
+					<a  class="nav-item nav-link" href="index.html">Home Page</a>
+				</li>
+
+				<li class="nav-item">
+					<a class="nav-item nav-link" href="about.html">About</a>
+				</li>
+
+				<li class="nav-item">
+					<a id="act" class="nav-item nav-link active" href="chat.html">Chat room</a>
+				</li>
+			</ul>
+            
+		</header>
+<!--====================== End of navigation menu ===============-->     
+      
+    <div class="sidenav">
+       <center>
+        <div>
+            <center>
+           <li class="nav-item">
+					<a  class="nav-item nav-link" href="index.html">Home Page</a>
+				</li>
+
+				<li class="nav-item">
+					<a class="nav-item nav-link" href="about.html">About</a>
+				</li>
+
+				<li class="nav-item">
+					<a  class="nav-item nav-link active" href="chat.html">Chat room</a>
+				</li>    
+        </div>
+                
+        <div class="inbox__people">
+            <h4>Active users</h4>
+            
+          </div>
+</center>
+      </div>
+      
+      
+      <br>
+      <hr>
+      <div class="content">
+        <div class="messages__history"></div>
+          <div class="fallback"></div>
+        <div class="inbox__messages">
+            
+          
+        </div>
+
+        <form class="message_form">
+            <input type="text" class="message_form__input" placeholder="Type a message" />
+            <button class="message_form__button" type="submit">
+              Enter
+            </button>
+          </form>
+      </div>
+
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="/js/client.js"></script>
+  </body>
+</html>
