@@ -11,7 +11,7 @@
 /*when going over the tab*/
 .nav-tabs a:hover{
 	background-color:#FEE5FF;
-	color:#14539a;
+	color:#8C1791;
 }
 /*color for the active tab*/
 #act{
@@ -53,3 +53,56 @@
     text-align: justify;
     
 }
+
+
+/* --------- Style for general content --------- */
+.main-content{
+	padding: 70px 20px 40px 50px;
+}
+.bg{
+    background-color:#ffa535;
+    color: #000000; 
+}
+
+/* Borders of all text boxes */
+.border{
+	border-radius: 20px;
+}
+
+.changeJumb{
+	background-color:#C743CE;
+	color:#ffffff;
+}
+.txt{
+    margin: 20px 10px 10px 10px;
+}
+.cont{
+    padding-top:20px;
+}
+/* Styling for the footer */
+.page-footer div{
+	padding: 15px 30px;
+}
+.page-footer{
+    background-color:#D3D3D3;
+}
+.page-footer h2,h5{
+    color:#616161;
+}
+.page-footer a{
+    color:#707070;
+}
+.page-footer{
+    margin-top:50px;
+}
+/* ---------------- end ------------------------ */
+
+/* -------------------- Style for section with geography and the map --------- */
+#geo{
+	padding: 60px 50px 30px 60px;
+}
+#map{
+	padding-right:30px;
+}
+/* ----------------------- end ------------------------- */
+

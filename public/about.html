@@ -158,22 +158,70 @@
         <div class="w3-container">
           <h5 class="w3-opacity"><b>Bachelor of Computing Science - University of Aberdeen, Aberdeen, Scotland</b></h5>
           <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Sep 2020 - <span class="w3-tag w3-teal w3-round">Current</span></h6>
-          <ul>
-              <i></i>
-              <li>Academic writing for business <i>(A)</i></li>
-              <li>Programming for Sciences and Engineering <i>(A1)</i></li>
-              <li>Modelling and Problem Solving for Computing <i>(A1)</i></li>
-              <li>Calculus I <i>(A1)</i></li>
-              <li>Spanish I and Spanish II <i>(A2)</i></li>
-              <li>Computer Architecture <i>(A2)</i></li>
-              <li>Object-Oriented Programming <i>(A1)</i></li>
-              <li>Understanding Data <i>(A1)</i></li>
-              <li>Web Development (currently studying)</li>
-              <li>Databases and Data Management (currently studying)</li>
-              <li>Software programming (currently studying)</li>
-              <li>Introduction to Medical Sciences (currently studying)</li>
+          <br>
+              <button onclick="myFunction('Demo1')" class="w3-button w3-block w3-pale-red w3-left-align">Academic writing for business <i>(A)</i></button>
+                <div id="Demo1" class="w3-hide w3-sand w3-container">
+                    <p>Focuses on concise and informative writing, as well as expressing ideas clearly.</p>
+                </div>
+
+                <button onclick="myFunction('Demo2')" class="w3-button w3-block w3-pale-red w3-left-align">Programming for Sciences and Engineering <i>(A1)</i></button>
+                <div id="Demo2" class="w3-hide w3-sand w3-container">
+                    <p>Introduction to computer programming, fundamental programming techniques, concepts, algorithms and data structures, using Python
+                </p>
+                </div>
+
+                <button onclick="myFunction('Demo3')" class="w3-button w3-block w3-pale-red w3-left-align">Modelling and Problem Solving for Computing <i>(A1)</i></button>
+                <div id="Demo3" class="w3-hide w3-sand w3-container">
+                    <p>Problem solving and modelling with computers, and concepts and methods that are fundamental to Computing science - focuses on logic</p>
+                </div>
+
+               <button onclick="myFunction('Demo4')" class="w3-button w3-block w3-pale-red w3-left-align">Calculus I <i>(A1)</i></button>
+                <div id="Demo4" class="w3-hide w3-sand w3-container">
+                    <p>Elective to help me gain more confidence when it comes to maths and making my further studies easier.</p>
+                </div>
               
-            </ul>
+              <button onclick="myFunction('Demo5')" class="w3-button w3-block w3-pale-red w3-left-align">Spanish I and Spanish II <i>(A2)</i></button>
+                <div id="Demo5" class="w3-hide w3-sand w3-container">
+                    <p>Elective which helps me develop my coding skills because as in programming, learning a new language requires u to learn how to spell and use the correct "grammar" </p>
+                </div>
+              
+              <button onclick="myFunction('Demo6')" class="w3-button w3-block w3-pale-red w3-left-align">Computer Architecture <i>(A2)</i></button>
+                <div id="Demo6" class="w3-hide w3-sand w3-container">
+                    <p>Beginning with digitakl logic gates and progressing to the design of combinational and sequential circuits, this course progresses to the design of an ARM microprocessor, programming using ARM assembly and top-to-doen understanding of how a microprocessor works.</p>
+                </div>
+              
+              <button onclick="myFunction('Demo7')" class="w3-button w3-block w3-pale-red w3-left-align">Object-Oriented Programming <i>(A1)</i></button>
+                <div id="Demo7" class="w3-hide w3-sand w3-container">
+                    <p>Includes advanced obkject oriented programming knowledge, implementation pf data structures and algorithms, and basic software engineering techniques. This course uses pygame as well as part of the final assessment for the course
+</p>
+                </div>
+              
+              <button onclick="myFunction('Demo8')" class="w3-button w3-block w3-pale-red w3-left-align">Understanding Data <i>(A1)</i></button>
+                <div id="Demo8" class="w3-hide w3-sand w3-container">
+                    <p>Statistics course which teaches how to summarise data effectively and how to correctly interpret it. Among 5he topics covered are sampling startegies, probability theory, confidence interval and hypothesis tests as well as computer practicals using the statistics software RStudio</p>
+                </div>
+              
+              <button onclick="myFunction('Demo9')" class="w3-button w3-block w3-pale-red w3-left-align">Web Development (currently studying)</button>
+                <div id="Demo9" class="w3-hide w3-sand w3-container">
+                    <p>A key focus on the integration of HTML with CSS and Javascript with other backing frameworks to develop dynamic applications. </p>
+                </div>
+              
+              <button onclick="myFunction('Demo10')" class="w3-button w3-block w3-pale-red w3-left-align">Databases and Data Management (currently studying)</button>
+                <div id="Demo10" class="w3-hide w3-sand w3-container">
+                    <p>Studies design and query of databases using major database technologies. The course aims to teach the material using case studies from real-world applications, both in lectures and lab classes.</p>
+                </div>
+              
+              <button onclick="myFunction('Demo11')" class="w3-button w3-block w3-pale-red w3-left-align">Software programming (currently studying)</button>
+                <div id="Demo11" class="w3-hide w3-sand w3-container">
+                    <p>Concerned with tools and techniques for scalable and dependable software programming. Using Java and related technologies. The course gives extensive programming practice in Java. It covers in depth features of the language and how best to use them, the execution model of the language, memory management, design principles underpinning the language, and comparisons with other languages.
+</p>
+                </div>
+              
+              <button onclick="myFunction('Demo12')" class="w3-button w3-block w3-pale-red w3-left-align">Introduction to Medical Sciences (currently studying)</button>
+                <div id="Demo12" class="w3-hide w3-sand w3-container">
+                    <p>Elective which i took mainly because it introduces me to lab work and team work, which i might apply in the future</p>
+                </div>
+              
           <hr>
         </div>
         
@@ -194,7 +242,20 @@
         
         
 
-        
+        <script>
+        function myFunction(id) {
+          var x = document.getElementById(id);
+          if (x.className.indexOf("w3-show") == -1) {
+            x.className += " w3-show";
+            x.previousElementSibling.className = 
+            x.previousElementSibling.className.replace("w3-black", "w3-red");
+          } else { 
+            x.className = x.className.replace(" w3-show", "");
+            x.previousElementSibling.className = 
+            x.previousElementSibling.className.replace("w3-red", "w3-black");
+          }
+        }
+        </script>
         <script src="js/client.js" async defer></script>
      
 
