@@ -1,0 +1,2 @@
+e2ad156	MARGARITA RADEVA	Sun Dec 5 11:58:02 2021	styled about page
+83274d2	MARGARITA RADEVA	Sat Dec 4 20:19:29 2021	added some content to the about page
