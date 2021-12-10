@@ -7,7 +7,6 @@
         <title>Home page</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="css/demo.css">
         <!--============================= Adding Bootstrap to the page ========================-->
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
@@ -39,7 +38,7 @@
                 <div class="jumbotron jumbotron-fluid">
                     <div id="banner-text" class="row">
                         <div  class="col-lg">
-                            <p><b>WELCOME TO MY WEBSITE!</b><br>
+                            <p style="color:#FFFFFF"><b>WELCOME TO MY WEBSITE!</b><br>
                                 Scroll down to see more about me
                             </p>
                         </div>
@@ -51,17 +50,18 @@
         <!--========= Using Bootsrap Grid system shown in lectures =================================================-->
 		<div class="container-fluid">
 			<div class="row main-content">
-				<div class="col-lg-6 border w3-card-4 w3-white" style="margin-bottom:30px;">
+				<div class="col-lg-6 border" style="margin-bottom:30px;">
                     <h4 class="txt">Why did I choose to study Computing Science?</h4>
                     <hr>
+                    <!-- Describing briefly why I like CS-->
 					<p>
 					I have always been passionate about all science subjects. Growing up I was always interested in learning new things and subjects like Mathematics, Physics and Chemistry were
                     amongst my favourite. I knew something about Mathematics and computers dragged my attention more than other fields. Thankfully, my highschool was very Mathematics and 
                     IT-oriented so I was able to not only get a solid base in those subjects, but also touch on various topics about Computing Science that fired my interest.
 					</p>
 				</div>
-
-				<div class="col-lg-2 border offset-lg-3  w3-card-4 w3-white" style="margin-top:10px">
+                <div class="col-lg-2 border offset-lg-3">
+                    <!-- Listing a few facts about me-->
 					<h4 class="txt">More about me</h4>
                     <hr>
 					<ul>
@@ -74,94 +74,85 @@
 				</div>
 			</div>
 		</div>
-<!--=================== End of that part ==================================================================-->
+        <!--=================== End of that part ==================================================================-->
         
 
-        	
-<!--========================== Bootstrap jumbotron to kind of separate the following content =======-->
+        <!--========================== Bootstrap jumbotron separates the following content =======-->
 		<div class="jumbotron jumbotron-fluid changeJumb">
 			<div class="container">
 				<h1 class="display-4">More about me</h1>
 			</div>
 		</div>
-<!--========================= End of the jumbotron ==============================================-->                               
-     
-<!--======================== Carousel with the help of W3schools(https://www.w3schools.com/bootstrap/bootstrap_carousel.asp)====-->
-<!--======================== All of the pictures for the carousel are mine ==================================================-->
-		<div class="container-fluid ">
-			<div class="row">
-				<div class="col-lg-4 offset-lg-1 cont">
-					<div id="demo" class="carousel slide" data-ride="carousel">
+        <!--========================= End of jumbotron ==============================================-->
 
-						<!--Saying how the sliders should work-->
+        <!--======================== Carousel with the help of W3schools(https://www.w3schools.com/bootstrap/bootstrap_carousel.asp)====-->
+        <!--======================== Used my code from last assignment and added pictures my mother has taken ==================================================-->
+		<div class="container-fluid ">
+			<div class="row main-content-two">
+				<div class="col-lg-4 offset-lg-1  cont" style="padding-top:90px">
+					<div id="demo" class="carousel slide" data-ride="carousel">
+                        <!--Saying how the sliders should work-->
 						<ul class="carousel-indicators">
 							<li data-target="#demo" data-slide-to="0" class="active"></li>
 							<li data-target="#demo" data-slide-to="1"></li>
 							<li data-target="#demo" data-slide-to="2"></li>
 						</ul>
-
-					<!--Adding pictures with text to them-->
-					<div class="carousel-inner img-fluid">
-					
-						<!--First picture-->
-						<div class="carousel-item active">
-							<img  src="pictures/img1.jpg" alt="Shipka monument" width="100%" height="300">
-							<div class="carousel-caption">
-								<h3>Shipka monument</h3>
-							</div>   
-						</div>
+                        
+                        <!--Adding pictures with text to them-->
+                        <div class="carousel-inner img-fluid">
+                            <!--First picture-->
+                            <div class="carousel-item active">
+                                <img class="img-fluid" src="pictures/img1.jpg" alt="Margarita rinning in a competition" >
+                                <div class="carousel-caption">
+                                    <h3>Running</h3>
+                                </div>   
+                            </div>
 						
-						<!--Second picture-->
-						<div class="carousel-item">
-						  <img  src="pictures/img2.jpg" alt="Etara, Gabrovo" width="100%" height="300">
-						  <div class="carousel-caption">
-							<h3>Etara, Gabrovo</h3>
-						  </div>   
-						</div>
+                            <!--Second picture-->
+                            <div class="carousel-item">
+                              <img  class="img-fluid" src="pictures/img2.jpg" alt="Margarita doing cross-country skiing">
+                              <div class="carousel-caption">
+                                <h3>Cross-country skiing</h3>
+                              </div>   
+                            </div>
 
-						<!--Third picture-->
-						<div class="carousel-item">
-						  <img  src="pictures/img3.jpg" alt="Gabrovo from above" width="100%" height="300">
-						  <div class="carousel-caption">
-							<h3>Gabrovo from above</h3>
-						  </div>   
-						</div>
-
-						
-					</div>
-					</div>
-						<!--Controls-->
-						<a class="carousel-control-prev" href="#demo" data-slide="prev">
-							<span class="carousel-control-prev-icon"></span>
-						</a>
-						<a class="carousel-control-next" href="#demo" data-slide="next">
-							<span class="carousel-control-next-icon"></span>
-						</a>
-				</div>
-                
-                <div class="col-lg-4 border offset-lg-1" style="margin-top:10px">
-					<h4 class="txt">My hobbies</h4>
+                            <!--Third picture-->
+                            <div class="carousel-item">
+                              <img class="img-fluid"  src="pictures/img3.jpg" alt="Margarita in biathlon competition" >
+                              <div class="carousel-caption">
+                                <h3>Biathlon</h3>
+                              </div>   
+                            </div>
+                        </div>
+                    </div>
+                    <!--Controls-->
+                    <a class="carousel-control-prev" href="#demo" data-slide="prev">
+                        <span class="carousel-control-prev-icon"></span>
+					</a>
+					<a class="carousel-control-next" href="#demo" data-slide="next">
+						<span class="carousel-control-next-icon"></span>
+					</a>
+                </div>
+                <div class="col-lg-4 border offset-lg-1" style="margin-top:30px">
+                    <!-- text complementing the pictures shown, describing my hobbies-->
+                    <h4 class="txt">My hobbies</h4>
                     <hr>
-					<p>I'm a very active person. In highschool I did orienteering, cross-country skiing and biathlon. Later on I joined the athletics club as well. Having to do all those sports really built up
-                        my time-management and organization skills and helped me be more disciplined.I have represented the county in both orienteering and athletics which allowed me to meet some great people and have some unforgettable experinces
-                        . Now, in univerity, I do athletics and I'm also the Orienteering coach.
-              </p>
-				</div>
+                    <p>I'm a very active person. In highschool I did orienteering, cross-country skiing and biathlon. Later on I joined
+                       the athletics club as well. Having to do all those sports really built up my time-management and organization skills
+                       and helped me be more disciplined.I have represented the county in both orienteering and athletics which allowed me to
+                        meet some great people and have some unforgettable experinces. Now, in univerity, I do athletics and I'm also the Orienteering coach.
+                    </p>
+                </div>
             </div>
         </div>
-<!--======================== End of carousel ================================================================================-->        
-
-
-<footer class="w3-container w3-teal w3-center w3-margin-top">
-  <p>Where to find me?</p>
-    <a href="https://www.facebook.com/profile.php?id=100001529484357"><i class="fa fa-facebook-official w3-hover-opacity"></i></a>
-    <a href="https://www.instagram.com/margaritaradeva_/"> <i class="fa fa-instagram w3-hover-opacity"></i></a>
-  <a href="https://gabrovo.bg/en/page/1003"><i class="fa fa-linkedin w3-hover-opacity"></i></a>
-  <p> Thank you for visiting my website! </p>
-</footer>
-
-								
-     
-
+        <!--======================== End of carousel ================================================================================-->        
+        <!--==================Page footer with the help of https://www.w3schools.com/default.asp =====-->
+        <footer class="w3-container page-footer w3-center w3-margin-top" >
+            <p style="margin-top:10px">Where to find me?</p>
+            <a href="https://www.facebook.com/profile.php?id=100001529484357"><i class="fa fa-facebook-official w3-hover-opacity"></i></a>
+            <a href="https://www.instagram.com/margaritaradeva_/"> <i class="fa fa-instagram w3-hover-opacity"></i></a>
+            <a href="https://gabrovo.bg/en/page/1003"><i class="fa fa-linkedin w3-hover-opacity"></i></a>
+            <p> Thank you for visiting my website! </p>
+        </footer>
     </body>
 </html>

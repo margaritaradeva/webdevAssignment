@@ -5,118 +5,73 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Chat room</title>
     <link rel="stylesheet" href="/css/style.css" />
-      <link rel="stylesheet" href="/css/demo.css" />
    <!--============================= Adding Bootstrap to the page ========================-->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-      
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+        <!--=== using https://www.w3schools.com/ external stylesheet for some of the webpage content ===-->
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 	
   </head>
   <body  style ="background-color:#ffe9ec;">
       
-      
-      
-    <div class="sidenav">
-       <center>
-        <div>
-            
- <!--====================== Navigation menu using the Bootstrap example from lectures ===============-->        
-		<header>
-            
-			<ul class ="nav nav-tabs sm-row">
-				<li class="nav-item">
-					<a  class="nav-item nav-link" href="index.html">Home Page</a>
-				</li>
 
-				<li class="nav-item">
+        <!--====================== Navigation menu using the Bootstrap example from lectures ===============-->
+        <header>
+            <ul class ="nav nav-tabs sm-row">
+                <li class="nav-item">
+                    <a class="nav-item nav-link" href="index.html">Home Page</a>
+                </li>
+                <li class="nav-item">
 					<a class="nav-item nav-link" href="about.html">About</a>
 				</li>
-
-				<li class="nav-item">
+                <li class="nav-item">
 					<a id="act" class="nav-item nav-link active" href="chat.html">Chat room</a>
 				</li>
-			</ul>
-		</header>
-<!--====================== End of navigation menu ===============-->
-            
-        </div>    
-        <div class="inbox__people">
-            <h4>Active users</h4>
-            
-          </div>
-</center>
-      </div>
+            </ul>
+        </header>
+        <!--====================== End of navigation menu ===============-->
       
-   
-      <br>
-      <hr>
-      <div class="content">
-        <div class="messages__history"></div>
-          <div class="fallback"></div>
-        <div class="inbox__messages">
-            
-          
+        <!-- Start of the grid -->
+        <div class="w3-row-padding main-content">  <!-- class here is used from https://www.w3schools.com/ to add space between rows -->
+            <!-- Start of left column -->
+            <div class="w3-third"> <!-- class here is used from https://www.w3schools.com/ to make the left column take a third of the content -->
+                <div>
+                    <!-- A box displaying the currently active users -->
+                    <div class="w3-container inbox__people" style="border-radius: 20px;margin-top:50px">
+                        <h4>Active users</h4>
+                    </div>
+                </div><br>
+            <!-- End of left column -->
+            </div>
+            <!-- Start of right column -->
+            <div class="w3-twothird"> <!-- class here is used from https://www.w3schools.com/ to make the right column take a two thirds of the content -->
+                <div class="w3-container border-chat messages__history w3-margin-bottom w3-margin-left" style="margin-top:70px">
+                </div>
+                <div class="w3-container w3-margin-bottom">
+                    <!-- for user is typing..-->
+                    <div class="fallback"></div>
+                    <!--text box + enter button-->
+                    <form class="message_form">
+                        <!-- the text box-->    
+                        <input autocomplete="on" type="text" class="message_form__input"  placeholder="Type a message" style="border-radius: 20px;"/>
+                        <!-- the enter button-->
+                    </form>
+                </div>
+                <!-- End of the right column -->
+            </div>
+            <!-- End of the grid -->
         </div>
+        <!--==================Page footer with the help of https://www.w3schools.com/default.asp =====-->
+        <footer class="w3-container page-footer w3-center w3-margin-top">
+            <p style="margin-top:10px">Where to find me?</p>
+            <a href="https://www.facebook.com/profile.php?id=100001529484357"><i class="fa fa-facebook-official w3-hover-opacity"></i></a>
+            <a href="https://www.instagram.com/margaritaradeva_/"> <i class="fa fa-instagram w3-hover-opacity"></i></a>
+            <a href="https://gabrovo.bg/en/page/1003"><i class="fa fa-linkedin w3-hover-opacity"></i></a>
+            <p> Thank you for visiting my website! </p>
+        </footer> 
 
-        <form class="message_form">
-           
-                
-            <input autocomplete="on" type="text" class="message_form__input" placeholder="Type a message" />
-            
-            <button class="message_form__button" type="submit">
-              Enter
-            </button>
-          </form>
-          
-      </div>
-\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
-      <!--========================== Page footer using Bootrap grid and links to reference text content sources ===================-->
-		<!--Footer with extarnal links to useful websites-->
-		<footer class="page-footer">
-			<div class="row">
-						<div class="col-lg-3">
-							<h2>Where to find me</h2>
-                            <hr>
-							<p style="color:#707070;">Here you can find links to all of my social media accounts and resources
-                            for the website content</p>
-						</div>
-						
-						<div class="col-lg-2 offset-lg-5">
-							<ul class="list-unstyled">
-								<li>
-                                    <h5>Home page</h5>
-                                </li>
-                                <li>
-                                    <a href="https://www.instagram.com/margaritaradeva_/">Instagram</a>
-                                </li>
-								<li>
-									<a href="https://www.facebook.com/profile.php?id=100001529484357">Facebook</a>
-								</li>
-								<li>
-									<a href="https://gabrovo.bg/en/page/1003">LinkedIn</a>
-								</li>
-								
-								
-							</ul>
-						</div>
-						
-						<div class="col-lg-2">
-							<ul class="list-unstyled">
-								<li>
-                                    <h5>Resources</h5>
-                                </li>
-                                <li>
-									<a href="https://www.openstreetmap.org/#map=13/42.8669/25.3053">OpenStreetMap</a>
-								</li>
-								
-							</ul>
-						</div>
-						
-						
-			</div>			
-		</footer>
-<!--========================== End of footer ===========================================================================-->
   <script src="/socket.io/socket.io.js"></script>
     <script src="/js/client.js"></script>
       

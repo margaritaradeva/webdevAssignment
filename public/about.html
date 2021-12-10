@@ -7,207 +7,179 @@
         <title>About</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-      
-<!--============================= Adding Bootstrap and external css to the page ========================-->
+        <!--============================= Adding Bootstrap and external css to the page ========================-->
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-	<!----using https://www.w3schools.com/ external stylesheet for some of the webpage content -->
-    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	    <!--==using https://www.w3schools.com/ external stylesheet for some of the webpage content -->
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <link rel="stylesheet" href="https://www.w3schools.com/lib/w3-colors-win8.css">
-<link rel="stylesheet" href="/css/style.css">
+        <link rel="stylesheet" href="/css/style.css">
     </head>
     <body style ="background-color:#ffe9ec;">
-        
-<!--====================== Navigation menu using the Bootstrap example from lectures ===============-->        
-		<header>
-            
-			<ul class ="nav nav-tabs sm-row">
-				<li class="nav-item">
-					<a class="nav-item nav-link" href="index.html">Home Page</a>
-				</li>
-
-				<li class="nav-item">
+        <!--====================== Navigation menu using the Bootstrap example from lectures ===============-->
+        <header>
+            <ul class ="nav nav-tabs sm-row">
+                <li class="nav-item">
+                    <a class="nav-item nav-link" href="index.html">Home Page</a>
+                </li>
+                <li class="nav-item">
 					<a id="act" class="nav-item nav-link active" href="about.html">About</a>
 				</li>
-
-				<li class="nav-item">
+                <li class="nav-item">
 					<a class="nav-item nav-link" href="chat.html">Chat room</a>
 				</li>
-			</ul>
-		</header>
-<!--====================== End of navigation menu ===============-->
-
-<!--===================== Banner for the page using jumbotron and lecture slides, picture is taken from me ========================-->
-        <article class="banner">
+            </ul>
+        </header>
+        <!--====================== End of navigation menu ===============-->
+        <!--===================== Using Bootstrap jumbotron for a page banner, image from https://pixabay.com/bg/illustrations/search/pink%20header/ ========================-->
+        <div class="banner">
             <div class="container">
                 <div class="jumbotron jumbotron-fluid">
-                    <div class="row">
-                        <div id="banner-text" class="col-lg">
-                            <center>
+                    <div id="banner-text" class="row">
+                        <div  class="col-lg">
+                            
                             <h1>CV page</h1>
-							<p>
+							<p style="color:#FFFFFF">
                             Scroll down too see Margarita Radeva's CV
                             </p>
-                                </center>
 						</div>
-					</div>
-				</div>
-			</div><br>
-		</article>
-<!--====================================== End of banner =================================================-->
-  <!-- The Grid -->
-  <div class="w3-row-padding">  <!-- class here is used from https://www.w3schools.com/ to add space between rows -->
-  
-    <!-- Left Column -->
-    <div class="w3-third"> <!-- class here is used from https://www.w3schools.com/ to make the left column take a third of the content -->
-    
-      <div  class="border ">
-        <div class="w3-display-container">
-          <img src="/pictures/personal_pic.jpg" style="width:100%" alt="Portfolio picture of Margarita ">
-          <div class="w3-win8-pink w3-display-bottomleft w3-container  w3-text-white">
-            <h2>Margarita Radeva</h2>
-          </div>
-        </div>
-        <div class="w3-container">
-            <br>
-          <p id = "objective"><i>Inquisive, energetic computer science student
-             seeking to gain experience for a future career through internships
-             and develop fundamental skills such as leadership, communication and collaboration.</i></p>
-          <p><i class="fa fa-briefcase fa-fw w3-margin-right w3-large w3-text-teal"></i>Student</p>
-          <p><i class="fa fa-home fa-fw w3-margin-right w3-large w3-text-teal"></i>Aberdeen, UK</p>
-          <p><i class="fa fa-envelope fa-fw w3-margin-right w3-large w3-text-teal"></i>margarita.radeva@gmail.com</p>
-          <p><i class="fa fa-phone fa-fw w3-margin-right w3-large w3-text-teal"></i>07471316037</p>
-          <hr>
-
-          <p class="w3-large"><b><i class="fa fa-asterisk fa-fw w3-margin-right w3-text-teal"></i>Skills</b></p>
-          <p>Adobe Photoshop</p>
-          <div class="w3-light-grey w3-round-xlarge w3-small">
-            <div class="w3-container w3-center w3-round-xlarge w3-teal" style="width:75%">75%</div>
-          </div>
-            <br>
-          <p>Leadership</p>
-          <div class="w3-light-grey w3-round-xlarge w3-small">
-            <div class="w3-container w3-center w3-round-xlarge w3-teal" style="width:80%">
-              <div class="w3-center w3-text-white">80%</div>
+                    </div>
+                </div>
+            </div><br>
+		</div>
+        <!--====================================== End of banner =================================================-->
+        <!-- Starting the grid -->
+        <div class="w3-row-padding main-content">  <!-- class here is used from https://www.w3schools.com/ to add space between rows -->
+            <!-- Start of left column -->
+            <div class="w3-third"> <!-- class here is used from https://www.w3schools.com/ to make the left column take a third of the content -->
+                <div  class="border ">
+                    <div class="w3-display-container">
+                        <img src="/pictures/personal_pic.jpg" style="width:100%" alt="Portfolio picture of Margarita holding the Bulgarian flag">
+                        <div class="w3-win8-pink w3-display-bottomleft w3-container  w3-text-white">
+                            <h2>Margarita Radeva</h2>
+                        </div>
+                    </div>
+                    <div class="w3-container"><br>
+                        <!-- short CV objective-->
+                        <p id = "objective"><i>Inquisive, energetic computer science student
+                            seeking to gain experience for a future career through internships
+                            and develop fundamental skills such as leadership, communication and collaboration.</i></p>
+                        <!-- ===== adding contact information =========-->
+                        <p><i class="fa fa-briefcase fa-fw w3-margin-right w3-large w3-text-pink"></i>Student</p>
+                        <p><i class="fa fa-home fa-fw w3-margin-right w3-large w3-text-pink"></i>Aberdeen, UK</p>
+                        <p><i class="fa fa-envelope fa-fw w3-margin-right w3-large w3-text-pink"></i>margarita.radeva@gmail.com</p>
+                        <p><i class="fa fa-phone fa-fw w3-margin-right w3-large w3-text-pink"></i>07471316037</p>
+                        <hr>
+                        <!-- ======= sliders showing some fundamental skills ======-->
+                        <p class="w3-large"><b><i class="fa fa-asterisk fa-fw w3-margin-right w3-text-pink"></i>Skills</b></p>
+                        <p>Adobe Photoshop</p>
+                        <div class="w3-light-grey w3-round-xlarge w3-small">
+                            <div class="w3-container w3-center w3-round-xlarge w3-win8-pink" style="width:75%">75%</div>
+                        </div><br>
+                        <p>Leadership</p>
+                        <div class="w3-light-grey w3-round-xlarge w3-small">
+                        <div class="w3-container w3-center w3-round-xlarge w3-win8-pink" style="width:80%">
+                            <div class="w3-center w3-text-white">80%</div>
+                        </div>
+                        </div><br>
+                        <p>Team-work</p>
+                        <div class="w3-light-grey w3-round-xlarge w3-small">
+                            <div class="w3-container w3-center w3-round-xlarge w3-win8-pink" style="width:100%">100%</div>
+                        </div><br>
+                        <p>Programming</p>
+                        <div class="w3-light-grey w3-round-xlarge w3-small">
+                            <div class="w3-container w3-center w3-round-xlarge w3-win8-pink" style="width:80%">80%</div>
+                        </div><br>
+                        <!-- ========== Demonstrate that I speak 3 languages ==========-->
+                        <p class="w3-large w3-text-theme"><b><i class="fa fa-globe fa-fw w3-margin-right w3-text-pink"></i>Languages</b></p>
+                        <p>Bulgarian</p>
+                        <div class="w3-light-grey w3-round-xlarge">
+                            <div class="w3-round-xlarge w3-win8-pink" style="height:24px;width:100%"></div>
+                        </div><br>
+                        <p>English</p>
+                        <div class="w3-light-grey w3-round-xlarge">
+                            <div class="w3-round-xlarge w3-win8-pink" style="height:24px;width:88%"></div>
+                        </div><br>
+                        <p>Spanish</p>
+                        <div class="w3-light-grey w3-round-xlarge">
+                            <div class="w3-round-xlarge w3-win8-pink" style="height:24px;width:48%"></div>
+                        </div><br>
+                    </div>
+                </div><br>
+                <!-- End of left column -->
             </div>
-          </div>
-            <br>
-          <p>Team-work</p>
-          <div class="w3-light-grey w3-round-xlarge w3-small">
-            <div class="w3-container w3-center w3-round-xlarge w3-teal" style="width:100%">100%</div>
-          </div>
-            <br>
-          <p>Programming</p>
-          <div class="w3-light-grey w3-round-xlarge w3-small">
-            <div class="w3-container w3-center w3-round-xlarge w3-teal" style="width:80%">80%</div>
-          </div>
-          <br>
-
-          <p class="w3-large w3-text-theme"><b><i class="fa fa-globe fa-fw w3-margin-right w3-text-teal"></i>Languages</b></p>
-          <p>Bulgarian</p>
-          <div class="w3-light-grey w3-round-xlarge">
-            <div class="w3-round-xlarge w3-teal" style="height:24px;width:100%"></div>
-          </div>
-            <br>
-          <p>English</p>
-          <div class="w3-light-grey w3-round-xlarge">
-            <div class="w3-round-xlarge w3-teal" style="height:24px;width:88%"></div>
-          </div>
-            <br>
-          <p>Spanish</p>
-          <div class="w3-light-grey w3-round-xlarge">
-            <div class="w3-round-xlarge w3-teal" style="height:24px;width:48%"></div>
-          </div>
-          <br>
-        </div>
-      </div><br>
-
-    <!-- End Left Column -->
-    </div>
-
-    <!-- Right Column -->
-    <div class="w3-twothird"> <!-- class here is used from https://www.w3schools.com/ to make the right column take a two thirds of the content -->
-    
-      <div class="w3-container border w3-margin-bottom">
-        <h2 class=" w3-padding-16 w3-opacity"><i class="fa fa-suitcase fa-fw w3-margin-right w3-xxlarge w3-text-teal"></i>Work Experience</h2>
-        <div class="w3-container">
-          <h5 class="w3-opacity"><b>Taco Bell-shift manager, Aberdeen, Scotland</b></h5>
-          <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Sep 2021 - <span class="w3-tag w3-teal w3-round">Current</span></h6>
-          <ul>
-              <li>Assist in training new associates</li>
-              <li>Carry out various administrative duties</li>
-              <li>Responsible for supervising workers, ensuring customer satisfaction and overseeing operations </li>
-              <li>Focus on keeping the environment friendly and ensure the team is working well together and as effectively as possible</li>
-            </ul>
-       
-          
-        </div>
-    
-      </div>
-
-      <div class="w3-container border w3-margin-bottom">
-        <h2 class=" w3-padding-16 w3-opacity"><i class="fa fa-certificate fa-fw w3-margin-right w3-xxlarge w3-text-teal"></i>Education</h2>
-        <div class="w3-container">
-          <h5 class="w3-opacity"><b>Highschool of Mathematics and Natural Sciences "Ivan Guyzelev", Gabrovo, Bulgaria </b></h5>
-          <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>2015-2020</h6>
-          <p>Specialises in Information Technollogy, with focus on using CorelDRAW, Photoshop and Microsoft Office.</p>
-          <hr>
-        </div>
-        <div class="w3-container">
-          <h5 class="w3-opacity"><b>Bachelor of Computing Science - University of Aberdeen, Aberdeen, Scotland</b></h5>
-          <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Sep 2020 - <span class="w3-tag w3-teal w3-round">Current</span></h6>
-          <br>
-            <ul>
-                
-            
-            
-             <li>Academic writing for business <i>(A)</i></li>
-                
-
-               <li>Programming for Sciences and Engineering <i>(A1)</i></li>
-                <li>Modelling and Problem Solving for Computing <i>(A1)</i></li>
-               <li>Calculus I <i>(A1)</i></li>
-                <li>Spanish I and Spanish II <i>(A2)</i></li>
-                <li>Computer Architecture <i>(A2)</i></li>
-                <li>Object-Oriented Programming <i>(A1)</i></li>
-                <li>Understanding Data <i>(A1)</i></li>
-                <li>Web Development (currently studying)</li>
-                <li>Databases and Data Management (currently studying)</li>
-                <li>Software programming (currently studying)</li>
-                <li>Introduction to Medical Sciences (currently studying)</li>
-                </ul>
+            <!-- Start of right column -->
+            <div class="w3-twothird"> <!-- class here is used from https://www.w3schools.com/ to make the right column take a two thirds of the content -->
+                <div class="w3-container border w3-margin-bottom">
+                    <h2 class=" w3-padding-16 w3-opacity"><i class="fa fa-suitcase fa-fw w3-margin-right w3-xxlarge w3-text-pink"></i>Work Experience</h2>
+                    <div class="w3-container">
+                        <h5 class="w3-opacity"><b>Taco Bell-shift manager, Aberdeen, Scotland</b></h5>
+                        <h6 class="w3-text-pink"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Sep 2021 - <span class="w3-tag w3-pink w3-round">Current</span></h6>
+                        <ul class="li-color">
+                            <li>Assist in training new associates</li>
+                            <li>Carry out various administrative duties</li>
+                            <li>Responsible for supervising workers, ensuring customer satisfaction and overseeing operations </li>
+                            <li>Focus on keeping the environment friendly and ensure the team is working well together and as effectively as possible</li>
+                         </ul>
+                    </div>
+                </div>
+                <div class="w3-container border w3-margin-bottom">
+                    <h2 class=" w3-padding-16 w3-opacity"><i class="fa fa-certificate fa-fw w3-margin-right w3-xxlarge w3-text-pink"></i>Education</h2>
+                    <div class="w3-container">
+                        <h5 class="w3-opacity"><b>Highschool of Mathematics and Natural Sciences "Ivan Guyzelev", Gabrovo, Bulgaria </b></h5>
+                        <h6 class="w3-text-pink"><i class="fa fa-calendar fa-fw w3-margin-right"></i>2015-2020</h6>
+                        <p>Specialises in Information Technollogy, with focus on using CorelDRAW, Photoshop and Microsoft Office.</p>
+                        <hr>
+                        </div>
+                        <div class="w3-container">
+                          <h5 class="w3-opacity"><b>Bachelor of Computing Science - University of Aberdeen, Aberdeen, Scotland</b></h5>
+                          <h6 class="w3-text-pink"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Sep 2020 - <span class="w3-tag w3-pink w3-round">Current</span></h6>
+                          <br>
+                            <ul class="li-color">
+                                <li>Academic writing for business <i>(A)</i></li><li>Programming for Sciences and Engineering <i>(A1)</i></li>
+                                <li>Modelling and Problem Solving for Computing <i>(A1)</i></li>
+                                <li>Calculus I <i>(A1)</i></li>
+                                <li>Spanish I and Spanish II <i>(A2)</i></li>
+                                <li>Computer Architecture <i>(A2)</i></li>
+                                <li>Object-Oriented Programming <i>(A1)</i></li>
+                                <li>Understanding Data <i>(A1)</i></li>
+                                <li>Web Development (currently studying)</li>
+                                <li>Databases and Data Management (currently studying)</li>
+                                <li>Software programming (currently studying)</li>
+                                <li>Introduction to Medical Sciences (currently studying)</li>
+                            </ul>
+                    </div>
+                    <hr>
+                </div>
+                <div class="w3-container border w3-margin-bottom">
+                    <h2 class="w3-opacity"><b>How did I develop this website?</b></h2>
+                    <ul class="li-color">
+                        <li>Some startup code for the chat of this website</li>
+                        <li>Lots of Googling!</li>
+                        <li>Using Bootstrap and W3.CSS libraries to make it responsive</li>
+                        <li>Overriding CSS to make it look good</li>
+                        <li>Help of my university's lectures</li>
+                        <li>Lots of errors too!</li>
+                    </ul><hr>
+                    <p>
+                        Tried making the whole design consistent, using the same colour themes and making sure there are
+                        no errors when it comes down to validation of the HTML code and JavaScript errors/warnings. First page(Home Page),
+                        acts as a "Who am I" kind of page and shows why I like Computing Science and what I like doing in my free time.
+                        This page(About) is the actual CV part, but I tried to be as informative, but concise, as possible.
+                    </p>
+                </div>
+                <!-- End of the right column -->
             </div>
-          <hr>
+            <!-- End of the grid -->
         </div>
-        <div class="w3-container border w3-margin-bottom">
-        
-          <h2 class="w3-opacity"><b>How did I develop this website?</b></h2>
-          <ul>
-              <li>Some startup code for the chat of this website</li>
-              <li>Lots of Googling!</li>
-              <li>Using Bootstrap and W3.CSS libraries to make it responsive</li>
-              <li>Overriding CSS to make it look good</li>
-              <li>Help of my university's lectures</li>
-              <li>Lots of errors too!</li>
-            </ul>
-       
-          
-        </div>
-    
-      </div>
-      </div>
-
-      
-    <!-- End Right Column -->
-    </div>
-    
-  <!-- End of the grid -->
-  </div>
-
-
-        
-        
-
+        <!--==================Page footer with the help of https://www.w3schools.com/default.asp =====-->
+        <footer class="w3-container page-footer w3-center w3-margin-top">
+            <p style="margin-top:10px">Where to find me?</p>
+            <a href="https://www.facebook.com/profile.php?id=100001529484357"><i class="fa fa-facebook-official w3-hover-opacity"></i></a>
+            <a href="https://www.instagram.com/margaritaradeva_/"> <i class="fa fa-instagram w3-hover-opacity"></i></a>
+            <a href="https://gabrovo.bg/en/page/1003"><i class="fa fa-linkedin w3-hover-opacity"></i></a>
+            <p> Thank you for visiting my website! </p>
+        </footer>
     </body>
 </html>

@@ -62,33 +62,38 @@ const inputField = document.querySelector(".message_form__input");
 const messageForm = document.querySelector(".message_form");
 const messageBox = document.querySelector(".messages__history");
 
+
 const addNewMessage = ({ user, message }) => {
   const time = new Date();
   const formattedTime = time.toLocaleString("en-US", { hour: "numeric", minute: "numeric" });
 
   const receivedMsg = `
+
   <div class="incoming__message">
-    <div class="received__message">
-      <p>${message}</p>
+    <div class="received__message" style="padding-top:20px;padding-right:20px;">
+      <p style="display: inline;background-color: red;color:white; padding:4px;border-style:groove; border-radius: 20px;border-color:pink; ">${message}</p>
       <div class="message__info">
         <span class="message__author">${user}</span>
         <span class="time_date">${formattedTime}</span>
       </div>
+
     </div>
   </div>`;
 
   const myMsg = `
+
   <div class="outgoing__message">
     <div class="sent__message">
-      <p>${message}</p>
+      <p style="display: inline;background-color: pink;color:black;margin-left:3px; padding:2px;border-style:groove; border-radius: 10px;border-color:pink">${message}</p>
       <div class="message__info">
-        <span class="time_date">${formattedTime}</span>
+        <span class="time_date" style="margin-left:3px;">${formattedTime}</span>
       </div>
     </div>
   </div>`;
 
   //is the message sent or received
   messageBox.innerHTML += user === userName ? myMsg : receivedMsg;
+    
 };
 
 messageForm.addEventListener("submit", (e) => {
