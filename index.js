@@ -26,18 +26,23 @@ io.on("connection", function (socket) {
     activeUsers.add(data);
     //... is the the spread operator, adds to the set while retaining what was in there already
     io.emit("new user", [...activeUsers]);
-    io.emit("chat message", {nick: "System", message: `New user ${socket.userId} has just joined`})
+      // to notift that a certain user connected to the chat
+    io.emit("chat message", {nick: "System", message: `New user ${socket.userId} has just joined`});
     
   });
 
   socket.on("disconnect", function () {
       activeUsers.delete(socket.userId);
       io.emit("user disconnected", socket.userId);
-      io.emit("chat message", {nick: "System", message: `${socket.userId} has just disconnected`})
+      // to notift that a certain user disconnected from the chat
+      io.emit("chat message", {nick: "System", message: `${socket.userId} has just disconnected`});
     });
 
     socket.on("chat message", function (data) {
       io.emit("chat message", data);
   });
-
+    // for "user is typing.."
+    socket.on("typing", function(data){
+        io.emit("typing", data);
+    });
 });

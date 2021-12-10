@@ -3,8 +3,8 @@
 const socket = io();
 
 const inboxPeople = document.querySelector(".inbox__people");
-
-
+// used for when user is typing
+const fallback = document.querySelector(".fallback");
 let userName = "";
 let id;
 const newUserConnected = function (data) {
@@ -107,4 +107,27 @@ messageForm.addEventListener("submit", (e) => {
 
 socket.on("chat message", function (data) {
   addNewMessage({ user: data.nick, message: data.message });
+});
+
+// if there is more than one character display "user is typing..."
+inputField.addEventListener("keyup", () => {
+  socket.emit("typing", {
+    typingUser: inputField.value.length >= 1,
+  });
+});
+ 
+socket.on("typing", function (data) {
+  const { typingUser, nick } = data;
+  if (!typingUser) {
+    fallback.innerHTML = `<i>There are no users typing..</i>`;
+      
+    return;
+  }
+fallback.innerHTML = `<i> ${userName} is typing...</i>`;
+});
+ 
+// alert box for when a new user joins
+socket.on("new user", function (data) {
+    let alertBox = `New user has just joined!`;
+    alert(alertBox);
 });

@@ -44,11 +44,10 @@
         <article class="banner">
             <div class="container">
                 <div class="jumbotron jumbotron-fluid">
-                    <div class="row">
-                        <div id="banner-text" class="col-lg">
+                    <div id="banner-text" class="row">
+                        <div  class="col-lg">
                             <center>
-                            <h1>WELCOME TO MY WEBSITE!</h1>
-							<p>
+                           <p><b>WELCOME TO MY WEBSITE!</b><br>
                             Scroll down to see more about me
                             </p>
                                 </center>
@@ -97,14 +96,142 @@
 		</div>
 <!--========================= End of the jumbotron ==============================================-->        
         
-        			<div class="container-fluid">
+        			
 			<div class="row main-content">		
-					<div class="col-lg-6 ">
-						<iframe style="width:100%;height:700;" src="https://www.openstreetmap.org/export/embed.html?bbox=25.209503173828125%2C42.831037756426596%2C25.401077270507812%2C42.902753329654495&amp;layer=mapnik"></iframe>
+                <div class="col-lg-1 " style="margin-bottom:20px;">
 					</div>
+					<div class="col-lg-4 " style="margin-bottom:20px;">
+						<iframe style="width:100;height:100%;" src="https://www.openstreetmap.org/export/embed.html?bbox=25.209503173828125%2C42.831037756426596%2C25.401077270507812%2C42.902753329654495&amp;layer=mapnik"></iframe>
+					</div>
+                <div class="col-lg-1 " style="margin-bottom:20px;">
+					</div>
+                <div class="col-lg-5  border bg w3-card-4 w3-white w3-text-grey " >
+                    <p>Gabrovo is a lovely town in central northern Bulgaria known for its unique nature, traditions and culture. Home of the biggest carnival in Bulgaria, Gabrovo is also known as an international capital of humour and satire attracting many tourists each year. Stretching over 25 km along the Yantra River makes Gabrovo the longest town in the country. The geographic center of Bulgaria - Uzana is located near the town. Great weather and great people make the perfect combination for a holiday for those who love the mountains with an opportunity to try the famous ski slopes in the winter and climb some of the highest peaks in Bulgaria.</p>
+                </div>
+                     
                         </div>
+<!--========================== Bootstrap jumbotron to kind of separate the following content =======-->
+		<div class="jumbotron jumbotron-fluid changeJumb">
+			<div class="container">
+				<h1 class="display-4">More about me</h1>
+			</div>
+		</div>
+<!--========================= End of the jumbotron ==============================================-->                               
+     
+<!--======================== Carousel with the help of W3schools(https://www.w3schools.com/bootstrap/bootstrap_carousel.asp)====-->
+<!--======================== All of the pictures for the carousel are mine ==================================================-->
+		<div class="container-fluid ">
+			<div class="row">
+				<div class="col-lg-4 offset-lg-1 cont">
+					<div id="demo" class="carousel slide" data-ride="carousel">
+
+						<!--Saying how the sliders should work-->
+						<ul class="carousel-indicators">
+							<li data-target="#demo" data-slide-to="0" class="active"></li>
+							<li data-target="#demo" data-slide-to="1"></li>
+							<li data-target="#demo" data-slide-to="2"></li>
+						</ul>
+
+					<!--Adding pictures with text to them-->
+					<div class="carousel-inner img-fluid">
+					
+						<!--First picture-->
+						<div class="carousel-item active">
+							<img  src="pictures/img1.jpg" alt="Shipka monument" width="100%" height="300">
+							<div class="carousel-caption">
+								<h3>Shipka monument</h3>
+							</div>   
+						</div>
+						
+						<!--Second picture-->
+						<div class="carousel-item">
+						  <img  src="pictures/img2.jpg" alt="Etara, Gabrovo" width="100%" height="300">
+						  <div class="carousel-caption">
+							<h3>Etara, Gabrovo</h3>
+						  </div>   
+						</div>
+
+						<!--Third picture-->
+						<div class="carousel-item">
+						  <img  src="pictures/img3.jpg" alt="Gabrovo from above" width="100%" height="300">
+						  <div class="carousel-caption">
+							<h3>Gabrovo from above</h3>
+						  </div>   
+						</div>
+
+						
+					</div>
+					</div>
+						<!--Controls-->
+						<a class="carousel-control-prev" href="#demo" data-slide="prev">
+							<span class="carousel-control-prev-icon"></span>
+						</a>
+						<a class="carousel-control-next" href="#demo" data-slide="next">
+							<span class="carousel-control-next-icon"></span>
+						</a>
+				</div>
+                
+                <div class="col-lg-4 border offset-lg-1 bg w3-card-4 w3-white w3-text-grey" style="margin-top:10px">
+					<h4 class="txt">My hobbies</h4>
+                    <hr>
+					<p>I'm a very active person. In highschool I did orienteering, cross-country skiing and biathlon. Later on I joined the athletics club as well. Having to do all those sports really built up
+                        my time-management and organization skills and helped me be more disciplined.I have represented the county in both orienteering and athletics which allowed me to meet some great people and have some unforgettable experinces
+                        . Now, in univerity, I do athletics and I'm also the Orienteering coach.
+              </p>
+				</div>
+            </div>
         </div>
-        
+<!--======================== End of carousel ================================================================================>        
+
+<!--========================== Page footer using Bootrap grid and links to reference text content sources ===================-->
+		<!--Footer with extarnal links to useful websites-->
+		<footer class="page-footer">
+			<div class="row">
+						<div class="col-lg-3">
+							<h2>Where to find me</h2>
+                            <hr>
+							<p style="color:#707070;">Here you can find links to all of my social media accounts and resources
+                            for the website content</p>
+						</div>
+						
+						<div class="col-lg-2 offset-lg-5">
+							<ul class="list-unstyled">
+								<li>
+                                    <h5>Home page</h5>
+                                </li>
+                                <li>
+                                    <a href="https://www.instagram.com/margaritaradeva_/">Instagram</a>
+                                </li>
+								<li>
+									<a href="https://www.facebook.com/profile.php?id=100001529484357">Facebook</a>
+								</li>
+								<li>
+									<a href="https://gabrovo.bg/en/page/1003">LinkedIn</a>
+								</li>
+								
+								
+							</ul>
+						</div>
+						
+						<div class="col-lg-2">
+							<ul class="list-unstyled">
+								<li>
+                                    <h5>Resources</h5>
+                                </li>
+                                <li>
+									<a href="https://www.openstreetmap.org/#map=13/42.8669/25.3053">OpenStreetMap</a>
+								</li>
+								
+							</ul>
+						</div>
+						
+						
+			</div>			
+		</footer>
+<!--========================== End of footer ===========================================================================-->
+
+
+
         <script src="js/client.js" async defer></script>
      
 
