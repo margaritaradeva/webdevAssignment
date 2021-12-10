@@ -100,6 +100,7 @@
 	text-align: left;
 	text-shadow: 2px 2px 15px #000000;
     font-size:30px;
+      text-align:center;
 }
 #banner-text h1{
 	
@@ -116,15 +117,16 @@
 /* --------- Style for general content --------- */
 .main-content{
 	padding: 70px 20px 40px 50px;
+    
+    
 }
-.bg{
-    background-color:#ffa535;
-    color: #000000; 
-}
+
 
 /* Borders of all text boxes */
 .border{
 	border-radius: 20px;
+    box-shadow:10px 10px 70px black;
+    background-color:white;
 }
 
 .changeJumb{
@@ -133,6 +135,8 @@
 }
 .txt{
     margin: 20px 10px 10px 10px;
+    color:grey;
+    font-weight: bold;
 }
 .cont{
     padding-top:20px;
@@ -164,3 +168,6 @@
 }
 /* ----------------------- end ------------------------- */
 
+p,li {
+    color:grey;
+}
